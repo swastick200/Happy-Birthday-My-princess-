@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background: radial-gradient(#093262, #000);
+  overflow-x: hidden;
+}
+
+/* 🌌 Star Field */
+#stars, #stars2, #stars3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background: transparent url('https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/media/stars.png') repeat;
+  animation: moveStars 100s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 10000px; }
+}
+
+/* 🌙 Moon */
+.moon {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #fff;
+  z-index: 1;
+}
+
+/* 🚀 Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: transparent;
+}
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  background: pink;
+  color: #000;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+/* 🌌 Main Content */
+.hidden {
+  display: none;
+}
+.sky-message {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #3b547d, #051d46);
+}
+
+/* 💌 Letter */
+.letter-section {
+  padding: 40px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+}
+
+/*  Memories */
+.carousel {
+  padding: 40px;
+  text-align: center;
+}
+.carousel-container img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white;
+}
+
+/* 🌹 Shayari & Final Sections */
+.shayari, .hug-box, .final-msg, .heart-slider {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* ❤️ Heart Slider */
+.heart-slider input {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* 🤗 Hug Section */
+.hug {
+  font-size: 4rem;
+}
+.hug-emoji {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.hug-kiss-box {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 182, 193, 0.1);
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+.hug-kiss-box p.press-text {
+  font-size: 1.1rem;
+  color: #ffd1dc;
+  margin-bottom: 10px;
+}
+.hug-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  background: hotpink;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px pink;
+  transition: transform 0.2s ease;
+}
+.hug-btn:hover {
+  transform: scale(1.05);
+}
+.hidden-msg {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ffd9ec;
+  display: none;
+}
+
+/* 🦋 Orbiting Butterflies */
+.orbit-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+}
+.orbit-center {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  color: #ffb6c1;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+}
+.orbit-butterfly {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  font-size: 24px;
+  animation: orbit-butterfly 8s linear infinite;
+  transform-origin: -60px center;
+}
+.orbit-b1 { animation-delay: 0s; }
+.orbit-b2 { animation-delay: 4s; }
+@keyframes orbit-butterfly {
+  0%   { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+/* 💖 Floating Hearts */
+.floating-heart {
+  position: absolute;
+  color: pink;
+  font-size: 24px;
+  animation: floatHeart 5s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes floatHeart {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  50% { transform: translateY(-20px) scale(1.2); opacity: 0.8; }
+  100% { transform: translateY(-40px) scale(1); opacity: 0; }
+}
+
+/* ✨ Emoji Shooting Star */
+.emoji-shooting-star {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  opacity: 0.8;
+  animation: shootAcross 6s linear infinite;
+  z-index: 1;
+}
+@keyframes shootAcross {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100vw, 100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* 🌟 Emoji Falling Stars FIXED ✅ */
+.emoji-stars {
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  animation: fallStars 5s linear infinite;
+  z-index: 1;
+  background: transparent; /* ensures no box */
+  line-height: 0;           /* removes line spacing */
+  pointer-events: none;     /* allows clicking through */
+}
+@keyframes fallStars {
+  0% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+/* 🌠 Static Shooting Stars */
+.shooting-stars-wrapper {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(white, transparent);
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: shootingStarAnim 8s linear infinite;
+}
+.shooting-star:nth-child(1) { top: 10%; left: 5%; animation-delay: 1s; }
+.shooting-star:nth-child(2) { top: 30%; left: 15%; animation-delay: 3s; }
+.shooting-star:nth-child(3) { top: 60%; left: 25%; animation-delay: 5s; }
+.shooting-star:nth-child(4) { top: 80%; left: 10%; animation-delay: 7s; }
+
+@keyframes shootingStarAnim {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  10% { opacity: 1; }
+  100% {
+    transform: translate(600px, 600px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* 🌠 Glowing Meteor Trail */
+.meteor {
+  position: fixed;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(white, transparent);
+  box-shadow: 0 0 10px white;
+  transform: rotate(45deg);
+  filter: blur(1px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+  animation: meteorAnim 1.5s linear forwards;
+}
+@keyframes meteorAnim {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(700px, 700px) rotate(45deg);
+  }
+}

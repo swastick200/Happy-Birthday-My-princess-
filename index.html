@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Princess 🎂💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🌟 Emoji Shooting Stars -->
+  <div class="emoji-shooting-star">🌟</div>
+  <div class="emoji-shooting-star" style="animation-delay: 3s;">✨</div>
+  <div class="emoji-shooting-star" style="animation-delay: 6s;">🌟</div>
+
+  <!-- 🌠 Glowing Meteor Shooting Stars -->
+  <div class="shooting-stars-wrapper">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- ✨ Star Background -->
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+
+  <!-- 🌟 Falling Stars -->
+  <div class="emoji-stars">🌟✨🌟✨🌟</div>
+
+  <!-- 🌕 Moon -->
+  <img src="moon.png" alt="Moon" class="moon" />
+
+  <!-- 🎁 Hero Section -->
+  <section class="hero">
+    <h1>🎂 Happy Birthday My Princess Saanjheli 💖</h1>
+    <p>On this special day, I made something just for you…</p>
+    <button onclick="startPage()">Unwrap the Surprise 🎁</button>
+  </section>
+
+  <!-- 🌌 Main Content -->
+  <main id="mainContent" class="hidden">
+
+    <!-- ✨ Birthday Message with Butterflies -->
+    <section class="sky-message">
+      <div class="orbit-wrapper">
+        <h2 class="sky-text center-name">
+          ✨ Happy Birthday <span class="orbit-center">Saanjheli</span> ✨
+        </h2>
+        <div class="orbit-butterfly orbit-b1">🦋</div>
+        <div class="orbit-butterfly orbit-b2">🦋</div>
+      </div>
+      <p class="subtext">From the bottom of my heart, just for you my love</p>
+    </section>
+
+    <!-- 💌 Letter -->
+    <section class="letter-section">
+      <h2>💌 A Letter From My Heart</h2>
+      <p id="typedText"></p>
+    </section>
+
+    <!-- 🖼️ Memory Carousel -->
+    <section class="carousel">
+      <h2> My sweet Princess</h2>
+      <div class="carousel-container">
+        <img src="yourphoto1.jpg" alt="Memory 1" />
+        <img src="yourphoto2.jpg" alt="Memory 2" />
+        <img src="yourphoto3.jpg" alt="Memory 3" />
+      </div>
+    </section>
+
+    <!-- 🌹 Shayari -->
+    <section class="shayari">
+      <h2>🌹 For You, My Poetry</h2>
+      <p>
+        Tere akhono mein duba mera aj,<br />
+        Tere sapno main duba mera kal.<br />
+        Tere honese se jo hu main aj,<br />
+        Tere na honese rahunga na main kal. 💖
+      </p>
+    </section>
+
+    <!-- ❤️ Heart Slider -->
+    <section class="heart-slider">
+      <h2>❤️ Slide to Feel My Love</h2>
+      <input type="range" min="0" max="100" value="0" id="loveSlider" />
+      <p id="loveMsg"></p>
+    </section>
+
+    <!-- 🤗 Hug Section -->
+    <section class="hug-kiss-box">
+      <h2>🤗 A Warm Hug Just for You</h2>
+      <div class="hug-emoji">🫂💖</div>
+      <div class="press-text">Press me to get some 👇</div>
+      <button class="hug-btn" onclick="sendLove()">Warm Hugs & Kisses 💌</button>
+      <p id="loveResponse" class="hidden-msg">💖 Hugs & kisses Delivered... Can you feel it? 💋</p>
+    </section>
+
+    <!-- 🌠 Final Message -->
+    <section class="final-msg">
+      <h2>🌠 My Final Wish</h2>
+      <p>
+        Happy Birthday again, my Princess 🌙✨.<br />
+        You deserve the stars, the moon, and every bit of love I carry in my heart..<br />
+       I love you more than words could ever express — more than the sky holds stars, more than the ocean holds waves.
+
+After 3 years and 6 months, I finally felt love again.
+I wasn’t even searching for you, yet God listened to my silent prayers and brought you into my life.
+You’re the blessing I never knew I needed… but now, I can’t imagine life without you.
+But from the depth of my heart, I wish all your dreams come true.
+Tor jibon’er protiti iccha puro hok.
+Tui khub khub khushi thakish… sobsomoy.
+Ami tor upor onekta bhalobasha chhoriye debo — jetar tulona nai.
+Ami jani eta bola thik na tor birthday’r dine…
+You once told me to wait a year…
+And I will — no matter what.
+I’m already counting the days till your 18th birthday — because I have something truly magical planned just for you.
+A surprise that will show you how deeply you're loved.
+Totodin porjont ami opekhai achi, thakbo… always by your side.
+
+I promise to give you the kind of love you’ve never even dreamed of.
+You are my everything. My today, my tomorrow, and forever.
+
+Again… Happy Birthday, baby.
+I feel like the luckiest person in the universe to have you by my side. 💖
+
+      </p>
+    </section>
+
+  </main>
+
+  <!-- 🎵 Background Music -->
+<audio id="bgMusic" loop>
+  <source src="your-music.mp3" type="audio/mpeg" />
+</audio>
+
+  <!-- 📜 JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
